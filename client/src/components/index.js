@@ -8,6 +8,7 @@ export { default as Social } from './tabs/Social';
 export { default as News} from './tabs/News';
 export { default as Education } from './tabs/Education';
 export { default as SendTip } from './tabs/SendTip';
+export { default as Leaderboard } from './tabs/Leaderboard';
 
 export { default as Login } from './Login';
 export { default as Registration } from './Registration';

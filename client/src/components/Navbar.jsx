@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 
-import logo from '../../images/navicon.png';
+import logo from '../../images/greynavicon.png';
 import { Link } from 'react-router-dom';
 
 const NavbarItem = ({ title, classProps }) => {
@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <nav className='w-full flex bg-transparent md:justify-center justify-between items-center p-4 glass-morphism'>
             <div className='md:flex-[0.5] flex-initial justify-center items-center'>
-                <img src={logo} alt="logo" className='w-20 h-15 cursor-pointer' />
+                <img src={logo} alt="logo" className='w-25 h-20 cursor-pointer' />
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify items-center flex-initial space-x-10'>
                 {/* {["Home", "Social", "Education"].map((item, index) => (
@@ -28,6 +28,7 @@ const Navbar = () => {
                 <Link className='font-bold' to='/'><li>Home</li></Link>
                 <Link className='font-bold' to='/Social'><li>Social</li></Link>
                 <Link className='font-bold' to='/Education'><li>Education</li></Link>
+                <Link className='font-bold' to='/Leaderboard'><li>Leaderboard</li></Link>
 
             </ul>
             <div className='flex relative'>
