@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import metamask from '../../images/metamask.png';
+
 const Tutorial = () => {
     return (
         <div>
