@@ -13,6 +13,7 @@ module.exports = {
       greennav: '#1FBF66',
       transparent: 'transparent',
       white: 'white',
+      purple: '#F4D3FF',
       whitetrans: 'hsla(360, 100%, 100%, 0.5)',
       button: '#b768a1',
       buttonhover: '#cf76b5',
