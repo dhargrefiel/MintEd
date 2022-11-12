@@ -4,6 +4,8 @@ const cors = require("cors");
 
 const app = express();
 
+const alert = require("alert");
+
 app.use(express.json());
 app.use(cors());
 
@@ -20,15 +22,17 @@ app.post('/register', (req, res) => {
 
     const email = req.body.email;//galing doon sa frontend
     const password = req.body.password;
-    const displayedName = req.body.displayedName;
+    const username = req.body.username;
+    const metaAddress = req.body.metaAddress;
 
     db.query(
-        "INSERT INTO user (email, displayed_name, password) VALUES(?,?,?)", 
-        [email, password, displayedName], 
+        "INSERT INTO user (email, username, password, metaAddress) VALUES(?,?,?,?)", 
+        [email, username, password, metaAddress], 
         (err, result) => {
             console.log(err);
         }
     );
+    alert("Registered Successfully");
 })
 
 //LOGIN API

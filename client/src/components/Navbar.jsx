@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { HiMenuAlt4 } from 'react-icons/hi';
-import { AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineUserAdd } from 'react-icons/ai';
+
 
 import logo from '../../images/greynavicon.png';
 import { Link } from 'react-router-dom';
+
+import { ethers } from 'ethers';
+const { ethereum } = window;
 
 const NavbarItem = ({ title, classProps }) => {
     return (
@@ -12,6 +16,7 @@ const NavbarItem = ({ title, classProps }) => {
         </li>
     );
 }
+
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -27,8 +32,8 @@ const Navbar = () => {
                 ))} */}
                 <Link className='font-bold' to='/'><li>Home</li></Link>
                 <Link className='font-bold' to='/Social'><li>Social</li></Link>
-                <Link className='font-bold' to='/Education'><li>Education</li></Link>
                 <Link className='font-bold' to='/Leaderboard'><li>Leaderboard</li></Link>
+
 
             </ul>
             <div className='flex relative'>
