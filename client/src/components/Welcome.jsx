@@ -23,7 +23,7 @@ const Welcome = () => {
                         <h1 className='text-3xl my-5 sm:text-5xl text-white text-white font-bold py-1'>Learn Web 3<br /> across the world</h1>
 
                         <Link to='/Tutorial'>
-                            <li className="flex flex-row justify-center my-5 bg-button p-3 rounded-full cursor-pointer hover:bg-[#2546bd]">                                  
+                            <li className="flex flex-row justify-center my-5 bg-button p-3 rounded-full cursor-pointer hover:bg-buttonhover">                                  
                                 <p className='text-white text-base font-semibold'>Get Started</p>
                             </li>
                         </Link>
@@ -40,19 +40,19 @@ const Welcome = () => {
                     </div>
 
                     {/* RIGHT SIDE */}
-                    <div className='p-10 m-5 sm:w-96 w-full flex flex-col justify-start bg-whitetrans rounded-2xl'>
+                    <div className='p-10 m-5 sm:w-96 w-full flex flex-col justify-start bg-whitetrans rounded-2xl drop-shadow-2xl'>
                         {/* <Input placeholder="Username" name="username" type="text"/>  */}
-                        <h1 className='text-center font-bold text-4xl mb-5'>LOGIN</h1>
-                        <label className='font-bold text-xl my-2' for="username">
+                        <h1 className='text-center font-bold text-4xl mb-5 text-white'>LOGIN</h1>
+                        <label className='font-bold text-xl my-2 text-white' for="username">
                             Username
                         </label>
-                        <input className='p-2 border-solid border-2 rounded-md' type="text" name="username" placeholder="Username" id="username" onChange={(e) => {setEmailLogin(e.target.value)}} required></input>
+                        <input className='p-2 border-solid border-2 rounded-md bg-whitetrans' type="text" name="username" placeholder="Username" id="username" onChange={(e) => {setEmailLogin(e.target.value)}} required></input>
 
-                        <label className='font-bold text-xl my-2' for="password">
+                        <label className='font-bold text-xl my-2 text-white' for="password">
                             Password
                         </label>
-                        <input className='p-2 border-solid border-2 rounded-md' type="password" name="password" placeholder="Password" id="password" required onChange={(e) => {setPasswordLogin(e.target.value)}}></input>
-                        <button className='bg-button rounded-full p-2 w-25 text-white m-10'>Log in</button>
+                        <input className='p-2 border-solid border-2 rounded-md bg-whitetrans' type="password" name="password" placeholder="Password" id="password" required onChange={(e) => {setPasswordLogin(e.target.value)}}></input>
+                        <button className='bg-button rounded-full p-2 w-25 text-white m-10 hover:bg-buttonhover'>Log in</button>
                     </div>
                 </div>
 

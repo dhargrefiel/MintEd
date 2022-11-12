@@ -15,6 +15,7 @@ module.exports = {
       white: 'white',
       whitetrans: 'hsla(360, 100%, 100%, 0.5)',
       button: '#b768a1',
+      buttonhover: '#cf76b5',
       cream: '#f7e5cd50',
       },
       screens: {
