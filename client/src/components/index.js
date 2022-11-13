@@ -14,3 +14,4 @@ export { default as Login } from './Login';
 export { default as Registration } from './Registration';
 export { default as RegistrationEduc } from './RegistrationEduc';
 export { default as Tutorial } from './Tutorial'
+export { default as Profile } from './Profile';

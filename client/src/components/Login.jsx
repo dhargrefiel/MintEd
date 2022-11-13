@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
 
@@ -18,7 +19,7 @@ const Login = () => {
 			</label>
 			<input type="password" name="password" placeholder="Password" id="password" required onChange={(e) => {setPasswordLogin(e.target.value)}}></input>
 
-			<button>Log in</button>
+			<Link to="/Social"><button>Log in</button></Link>
 		</div>
     );
 }

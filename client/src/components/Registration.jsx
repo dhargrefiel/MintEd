@@ -34,7 +34,7 @@ const Registration = () => {
 
                 {!currentAccount && (                   
                     <div>
-                        <button type="button" onClick={connectWallet} className="flex flex-row justify-center items-center may-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]">
+                        <button type="button" onClick={connectWallet} className="flex flex-row justify-center my-5 bg-violet-600 hover:ring hover:ring-violet-300 text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer">
                             <p className='text-white text-base font-semibold'>Connect Wallet</p>
                         </button>
                     </div>
@@ -50,35 +50,35 @@ const Registration = () => {
                 <label className='font-bold text-xl my-2 text-white'  for="username">
                     Username
                 </label>
-                <input className='p-2 border-solid border-2 rounded-md bg-whitetrans' type="text" name="username" placeholder="Username" id="username" onChange={(e) => {setUserNameReg(e.target.value)}} required></input>
+                <input className='p-1 border-solid border-2 rounded-md bg-whitetrans' type="text" name="username" placeholder="Username" id="username" onChange={(e) => {setUserNameReg(e.target.value)}} required></input>
 
                 <label className='font-bold text-xl my-2 text-white'  for="address">
                     Metamask Address
                 </label>
-                <input className='p-2 border-solid border-2 rounded-md bg-whitetrans' type="text" name="address" placeholder="Metamask Address" id="address" onChange={(e) => {setMetaAddressReg(e.target.value)}} required></input>
+                <input className='p-1 border-solid border-2 rounded-md bg-whitetrans' type="text" name="address" placeholder="Metamask Address" id="address" onChange={(e) => {setMetaAddressReg(e.target.value)}} required></input>
                 
                 
                 <label className='font-bold text-xl my-2 text-white'  for="email">
                     Email
                 </label>
-                <input className='p-2 border-solid border-2 rounded-md bg-whitetrans' type="email" name="email" placeholder="Email" id="email" onChange={(e) => {setEmailReg(e.target.value)}} required></input>
+                <input className='p-1 border-solid border-2 rounded-md bg-whitetrans' type="email" name="email" placeholder="Email" id="email" onChange={(e) => {setEmailReg(e.target.value)}} required></input>
 
                 <label className='font-bold text-xl my-2 text-white' for="password">
                     Password 
                 </label>
-                <input className='p-2 border-solid border-2 rounded-md bg-whitetrans' type="password" name="password" placeholder="Password" id="password" onChange={(e) => {setPasswordReg(e.target.value)}}required ></input>
+                <input className='p-1 border-solid border-2 rounded-md bg-whitetrans' type="password" name="password" placeholder="Password" id="password" onChange={(e) => {setPasswordReg(e.target.value)}}required ></input>
 
                 <label className='font-bold text-xl my-2 text-white' for="password">
                     Confirm Password 
                 </label>
-                <input className='p-2 border-solid border-2 rounded-md bg-whitetrans' type="password" name="passwordconf" placeholder="Confirm Password" id="passwordconf" onChange={(e) => {setPasswordReg1(e.target.value)}}required ></input>
+                <input className='p-1 border-solid border-2 rounded-md bg-whitetrans' type="password" name="passwordconf" placeholder="Confirm Password" id="passwordconf" onChange={(e) => {setPasswordReg1(e.target.value)}}required ></input>
 
                 {!currentAccount && (
-                    <button className='bg-button rounded-full p-2 w-25 text-white mt-10 ' onClick={register} disabled>Sign up</button>
+                    <button className='flex flex-row justify-center my-5 bg-violet-600 hover:ring hover:ring-violet-300 text-white w-full mt-10 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer' onClick={register} disabled>Sign up</button>
                 )}
             
                 {currentAccount && (
-                    <button className='bg-button rounded-full p-2 w-25 text-white mt-10 hover:bg-buttonhover' onClick={register}>Sign up</button>
+                    <Link to="/"><button className='flex flex-row justify-center my-5 bg-violet-600 hover:ring hover:ring-violet-300 text-white w-full mt-10 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer' onClick={register}>Sign up</button></Link>
                 )}
 
                 </div>

@@ -1,4 +1,4 @@
-import { Navbar, Welcome, Footer, Services, Transactions, Social, News, Education, SendTip, Login, Registration, RegistrationEduc, Tutorial, Leaderboard} from "./components"
+import { Navbar, Welcome, Footer, Services, Transactions, Social, News, Education, SendTip, Login, Registration, RegistrationEduc, Tutorial, Leaderboard, Profile} from "./components"
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 const App = () => {
@@ -25,6 +25,7 @@ const App = () => {
               <Route exact path='/RegistrationEduc' element={<RegistrationEduc />}></Route>
               <Route exact path='/Tutorial' element={<Tutorial />}></Route>
               <Route exact path='/Leaderboard' element={<Leaderboard />}></Route>
+              <Route exact path='/Profile' element={<Profile />}></Route>
             </Routes>
           </div>
         </div>
