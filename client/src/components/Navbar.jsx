@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 import { HiMenuAlt4 } from 'react-icons/hi';
-import { AiOutlineClose, AiOutlineUserAdd } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineUserAdd, AiOutlineLogout } from 'react-icons/ai';
 
 
 import logo from '../../images/greynavicon.png';
@@ -33,7 +33,7 @@ const Navbar = () => {
                 <Link className='font-bold' to='/'><li>Home</li></Link>
                 <Link className='font-bold' to='/Social'><li>Social</li></Link>
                 <Link className='font-bold' to='/Leaderboard'><li>Leaderboard</li></Link>
-
+                <Link className='font-bold' to='/'><AiOutlineLogout className='text-3xl'></AiOutlineLogout></Link>
 
             </ul>
             <div className='flex relative'>

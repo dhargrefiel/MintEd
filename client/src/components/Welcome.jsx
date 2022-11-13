@@ -23,7 +23,11 @@ const Welcome = () => {
                 <div className='flex mf:flex-row flex-col items-start justify-between md:p-10 py-12 space-x-20'>
                     <div className='flex flex-1 justify-start flex-col'>
                         <h1 className='text-3xl my-5 sm:text-5xl text-white text-white font-bold py-1'>Learn Web 3<br /> across the world</h1>
-
+                        <p className="text-white mt-5 mb-5">
+                        MintEd is an edutainment-focused socialfi network that allows
+                        <br />users and partner companies to share factual information
+                        <br />under their expertise on the Web3.
+                        </p>
                         <Link to='/Tutorial'>
                             <li className="flex flex-row justify-center my-5 hover:bg-violet-600  focus:ring focus:ring-violet-300 ... text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer">                                  
                                 <p className='text-white text-base font-semibold'>Get Started</p>
