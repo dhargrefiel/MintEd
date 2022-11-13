@@ -95,13 +95,11 @@ const Welcome = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-col w-full justify-center items-center mt-20'>
+                <div className='flex flex-col w-5/6 justify-center items-center mt-20'>
                     <h1 className='text-white text-4xl text-center font-bold py-5'>About the App</h1>
                     <div className='px-20 text-justify text-white'>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
-                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>MintEd is an edutainment-focused socialfi network that allows users and partner companies to share factual information under their expertise on the Web3. A brand-new social network called SocialFi is built on the idea of bringing people together who share interests. This website distinguishes itself from other social networks by focusing on content sharing and discovery in web 3.0. Using this SocialFi, you can connect with people who share your interests and find and share content that is pertinent to them.
+                        <br/><br/>The opportunity to earn eth through learning and sharing is another aspect that makes this project exciting. Professionals, particularly web 3.0 enthusiasts, have the chance to use this program to ask questions or start forums in the online community. To pose a question or submit something, you must have a certain number of eth. Then, members of the MintEd community can engage with each other by leaving comments and giving each other an upvote or downvote. The user with the most upvotes is entitled to a portion of the eth that was paid by the post's creator. Additionally, there will be monetization for experts who can gather a particular amount of upvotes, which will be their ticket into the leaderboard for more benefits. People will be encouraged to utilize the website thanks to this system as it makes it easy for them to learn, share, and earn.</p>
                 </div>
                 </div>
                 
